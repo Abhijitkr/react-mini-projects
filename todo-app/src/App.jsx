@@ -4,7 +4,7 @@ import { TodoProvider } from "./contexts/";
 const [todos, setTodos] = useState([]);
 
 const addTodo = (todo) => {
-  setTodos((prevTodos) => [{ ...todo, id: Date.now() }, ...prevTodos]);
+  setTodos((prevTodos) => [{ id: Date.now(), ...todo }, ...prevTodos]);
 }
 
 const toggleComplete = (id) => {
