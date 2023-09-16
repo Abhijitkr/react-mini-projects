@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { TodoProvider } from "./contexts/";
 import { TodoForm, TodoItem } from "./components";
 
@@ -22,6 +21,16 @@ export default function App() {
   const deleteTodo = (id) => {
     setTodos((prevTodos) => prevTodos.filter(prevTodo => prevTodo.id !== id))
   }
+
+  useEffect(() => {
+    const todos = JSON.parse(localStorage.getItem('todos'));
+    if (todos && todos.length > 0) setTodos(todos);
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos])
+
   return (
     <TodoProvider value={{ addTodo, toggleComplete, updateTodo, deleteTodo }}>
       <div className="bg-[#172842] min-h-screen py-8">
