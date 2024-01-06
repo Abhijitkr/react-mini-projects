@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 200px;
+}
+
+.dataItem {
+  width: 500px;
+  margin: 10px auto;
+}
+
+.title,
+.answer {
+  background-color: rgb(42, 23, 112);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.title {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.answer {
+  font-size: 1.1rem;
+}
