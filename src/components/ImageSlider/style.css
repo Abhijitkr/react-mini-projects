@@ -43,10 +43,10 @@
 
 .indicator {
   display: flex;
-  width: 100%;
   justify-content: center;
   position: absolute;
   bottom: 20px;
+  width: 650px;
 }
 
 .indicator button {
