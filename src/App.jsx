@@ -1,4 +1,5 @@
 import Accordion from "./components/Accordian";
+import DarkLightMode from "./components/DarkLightMode";
 import ImageSlider from "./components/ImageSlider";
 import LoadMore from "./components/LoadMore";
 import QRCodeGenerator from "./components/QRCodeGenerator";
@@ -17,7 +18,8 @@ function App() {
       <ImageSlider url={"https://picsum.photos/v2/list"} limit={5} /> */}
       {/* <LoadMore /> */}
       {/* <TreeView menus={menus} /> */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
+      <DarkLightMode />
     </>
   );
 }

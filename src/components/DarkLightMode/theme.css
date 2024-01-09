@@ -1,0 +1,32 @@
+:root {
+  --background: white;
+  --text-primary: black;
+  --button-bg: white;
+  --button-text: black;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --text-primary: white;
+  --button-bg: black;
+  --button-text: white;
+}
+
+.theme-container {
+  background-color: var(--background);
+  color: var(--text-primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+
+.theme-container button {
+  width: 100px;
+  padding: 5px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}

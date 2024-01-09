@@ -8,7 +8,7 @@
 }
 
 .qr-code-container input,
-button {
+.qr-code-container button {
   width: 400px;
   height: 40px;
   margin: auto;
