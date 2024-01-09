@@ -4,6 +4,7 @@ import ImageSlider from "./components/ImageSlider";
 import LoadMore from "./components/LoadMore";
 import QRCodeGenerator from "./components/QRCodeGenerator";
 import RandomColor from "./components/RandomColor";
+import ScrollIndicator from "./components/ScrollIndicator";
 import StarRating from "./components/StarRating";
 import TreeView from "./components/TreeView";
 import menus from "./components/TreeView/data";
@@ -19,7 +20,8 @@ function App() {
       {/* <LoadMore /> */}
       {/* <TreeView menus={menus} /> */}
       {/* <QRCodeGenerator /> */}
-      <DarkLightMode />
+      {/* <DarkLightMode /> */}
+      <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
     </>
   );
 }
