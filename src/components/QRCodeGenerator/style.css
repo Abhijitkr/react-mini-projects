@@ -1,0 +1,21 @@
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.qr-code-container input,
+button {
+  width: 400px;
+  height: 40px;
+  margin: auto;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.qr-code-container button {
+  height: 50px;
+}
