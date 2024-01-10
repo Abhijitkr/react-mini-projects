@@ -1,0 +1,30 @@
+.tabs-parent-wrapper {
+  text-align: center;
+  height: 200px;
+  margin: 100px;
+}
+
+.tabs-heading {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.label {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(33, 182, 78);
+  color: white;
+  user-select: none;
+  width: 80px;
+  cursor: pointer;
+}
+
+.label.active {
+  background-color: yellowgreen;
+}
+
+.tabs-content div {
+  font-size: 25px;
+  font-weight: bold;
+}
