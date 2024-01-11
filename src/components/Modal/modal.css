@@ -1,0 +1,64 @@
+.modal-trigger {
+  text-align: center;
+  height: 100vh;
+}
+
+.modal-trigger button {
+  margin: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.modalOn button {
+  display: none;
+}
+
+.modal-bg {
+  background-color: rgb(25, 168, 137);
+  height: 100vh;
+}
+
+.modal-container {
+  position: relative;
+  background-color: aliceblue;
+  top: 200px;
+  width: 60%;
+  margin: auto;
+  border: 2px solid yellowgreen;
+  animation-name: modalAnimation;
+  animation-duration: 0.5s;
+  z-index: 1;
+  text-align: center;
+}
+
+.modal-head,
+.modal-foot {
+  background-color: rgb(71, 209, 71);
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.modal-head span {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal-body {
+  height: 100px;
+}
+
+@keyframes modalAnimation {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+  to {
+    top: 200px;
+    opacity: 1;
+  }
+}

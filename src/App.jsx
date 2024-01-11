@@ -9,6 +9,7 @@ import StarRating from "./components/StarRating";
 import TabParent from "./components/Tabs/TabParent";
 import TreeView from "./components/TreeView";
 import menus from "./components/TreeView/data";
+import ModalParent from "./components/Modal/ModalParent";
 import "./index.css";
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       {/* <QRCodeGenerator /> */}
       {/* <DarkLightMode /> */}
       {/* <ScrollIndicator url="https://dummyjson.com/products?limit=100" /> */}
-      <TabParent />
+      {/* <TabParent /> */}
+      <ModalParent />
     </>
   );
 }
