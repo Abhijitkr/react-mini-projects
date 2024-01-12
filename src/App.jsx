@@ -16,6 +16,7 @@ import Searching from "./components/AutoCompleteSearch/Searching";
 import BackgroundChanger from "./components/BackgroundChanger";
 import ContextAPI from "./components/ContextAPI/ContextAPI";
 import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
+import TodoApp from "./components/TodoApp/TodoApp";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       {/* <BackgroundChanger /> */}
       {/* <ContextAPI /> */}
       {/* <PasswordGenerator /> */}
+      <TodoApp />
     </>
   );
 }
