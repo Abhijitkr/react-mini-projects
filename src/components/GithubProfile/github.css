@@ -32,6 +32,27 @@
   border: 1px solid black;
 }
 
-.github-profile-info p {
+.github-profile-info a,
+p {
   font-size: 1.2rem;
+}
+
+.github-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.github-avatar img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.github-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
 }

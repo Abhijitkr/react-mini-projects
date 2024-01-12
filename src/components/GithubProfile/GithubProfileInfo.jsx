@@ -16,18 +16,20 @@ export default function GithubProfileInfo({ user }) {
     <div className="github-profile-info">
       <div className="github-avatar">
         <img src={avatar_url} alt={name || login} />
-        <p>{name || login}</p>
+        <a href={html_url}>{name || login}</a>
       </div>
       <div className="github-info">
-        <a href={html_url}>{name || login}</a>
         <p>{bio}</p>
         <p>Followers: {followers}</p>
         <p>Public Repositories: {public_repos}</p>
         <p>
-          Created at:{" "}
-          {`${createdDate.getDate()} ${createdDate.toLocaleDateString("en-us", {
-            month: "short",
-          })} ${createdDate.getFullYear()}`}
+          Created at:
+          {` ${createdDate.getDate()} ${createdDate.toLocaleDateString(
+            "en-us",
+            {
+              month: "short",
+            }
+          )} ${createdDate.getFullYear()}`}
         </p>
       </div>
     </div>
