@@ -13,23 +13,29 @@ import menus from "./components/TreeView/data";
 import ModalParent from "./components/Modal/ModalParent";
 import GithubProfile from "./components/GithubProfile/GithubProfile";
 import Searching from "./components/AutoCompleteSearch/Searching";
+import BackgroundChanger from "./components/BackgroundChanger";
+import ContextAPI from "./components/ContextAPI/ContextAPI";
+import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 
 function App() {
   return (
     <>
-      {/* <Accordion />
-      <RandomColor /> */}
-      {/* <StarRating noOfStars={10} />
-      <ImageSlider url={"https://picsum.photos/v2/list"} limit={5} /> */}
-      {/* <LoadMore /> */}
-      {/* <TreeView menus={menus} /> */}
-      {/* <QRCodeGenerator /> */}
-      {/* <DarkLightMode /> */}
-      {/* <ScrollIndicator url="https://dummyjson.com/products?limit=100" /> */}
-      {/* <TabParent /> */}
-      {/* <ModalParent /> */}
-      {/* <GithubProfile /> */}
-      <Searching />
+      {/* <Accordion /> */}
+      {/* <RandomColor /> */}
+      {/* <StarRating noOfStars={10} /> */}
+      {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={5} />
+      <LoadMore />
+      <TreeView menus={menus} />
+      <QRCodeGenerator />
+      <DarkLightMode />
+      <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
+      <TabParent />
+      <ModalParent />
+      <GithubProfile />
+      <Searching /> */}
+      {/* <BackgroundChanger /> */}
+      {/* <ContextAPI /> */}
+      {/* <PasswordGenerator /> */}
     </>
   );
 }

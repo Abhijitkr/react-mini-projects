@@ -18,7 +18,8 @@ export default function Searching() {
       const filterData =
         users && users.length
           ? users.filter((user) => user.toLowerCase().indexOf(query) > -1)
-          : [];
+          : //  ? users.filter((user) => user.toLowerCase().includes(query))
+            [];
       setFilterUsers(filterData);
       setShowDropdown(true);
     } else setShowDropdown(false);

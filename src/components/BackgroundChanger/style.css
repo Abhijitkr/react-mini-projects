@@ -1,0 +1,23 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 60%;
+  background-color: gray;
+  height: 60px;
+  position: absolute;
+  bottom: 50px;
+  left: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 0 20px;
+  margin: 10px;
+  color: white;
+}
