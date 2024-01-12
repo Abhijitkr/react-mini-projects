@@ -14,7 +14,7 @@ export default function ModalParent() {
   }
 
   return (
-    <div className={showModal ? "modalOn" : "modal-trigger"}>
+    <div className="modal-trigger">
       <button onClick={handleModal}>Trigger Modal</button>
       {showModal && (
         <Modal

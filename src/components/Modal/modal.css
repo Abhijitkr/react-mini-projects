@@ -1,6 +1,7 @@
 .modal-trigger {
   text-align: center;
   height: 100vh;
+  background-color: antiquewhite;
 }
 
 .modal-trigger button {
@@ -9,26 +10,13 @@
   cursor: pointer;
 }
 
-.modalOn button {
-  display: none;
-}
-
 .modal-bg {
-  background-color: rgb(25, 168, 137);
+  background-color: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100vw;
   height: 100vh;
-}
-
-.modal-container {
-  position: relative;
-  background-color: aliceblue;
-  top: 200px;
-  width: 60%;
-  margin: auto;
-  border: 2px solid yellowgreen;
-  animation-name: modalAnimation;
-  animation-duration: 0.5s;
   z-index: 1;
-  text-align: center;
+  top: 0;
 }
 
 .modal-head,
@@ -37,6 +25,19 @@
   color: white;
   padding: 20px;
   font-weight: bold;
+}
+
+.modal-container {
+  position: relative;
+  background-color: aliceblue;
+  top: 200px;
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid yellowgreen;
+  animation-name: modalAnimation;
+  animation-duration: 0.5s;
+  z-index: 1;
+  text-align: center;
 }
 
 .modal-head span {
