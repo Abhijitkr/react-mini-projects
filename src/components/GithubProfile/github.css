@@ -1,0 +1,37 @@
+.github-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.github-control {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.github-control input {
+  padding: 10px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+.github-control button {
+  padding: 10px;
+  background-color: aquamarine;
+  border: none;
+}
+
+.github-control button:active {
+  border: 1px solid black;
+}
+
+.github-profile-info {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.github-profile-info p {
+  font-size: 1.2rem;
+}

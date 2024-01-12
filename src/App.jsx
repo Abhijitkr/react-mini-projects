@@ -11,6 +11,7 @@ import TreeView from "./components/TreeView";
 import menus from "./components/TreeView/data";
 import ModalParent from "./components/Modal/ModalParent";
 import "./index.css";
+import GithubProfile from "./components/GithubProfile/GithubProfile";
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <DarkLightMode /> */}
       {/* <ScrollIndicator url="https://dummyjson.com/products?limit=100" /> */}
       {/* <TabParent /> */}
-      <ModalParent />
+      {/* <ModalParent /> */}
+      <GithubProfile />
     </>
   );
 }
