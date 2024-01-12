@@ -1,3 +1,4 @@
+import "./index.css";
 import Accordion from "./components/Accordian";
 import DarkLightMode from "./components/DarkLightMode";
 import ImageSlider from "./components/ImageSlider";
@@ -10,8 +11,8 @@ import TabParent from "./components/Tabs/TabParent";
 import TreeView from "./components/TreeView";
 import menus from "./components/TreeView/data";
 import ModalParent from "./components/Modal/ModalParent";
-import "./index.css";
 import GithubProfile from "./components/GithubProfile/GithubProfile";
+import Searching from "./components/AutoCompleteSearch/Searching";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <ScrollIndicator url="https://dummyjson.com/products?limit=100" /> */}
       {/* <TabParent /> */}
       {/* <ModalParent /> */}
-      <GithubProfile />
+      {/* <GithubProfile /> */}
+      <Searching />
     </>
   );
 }

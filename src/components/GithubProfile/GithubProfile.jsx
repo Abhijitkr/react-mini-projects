@@ -16,6 +16,7 @@ export default function GithubProfile() {
       if (data) {
         setGitData(data);
         setUsername("");
+        setError(null);
         setLoading(false);
       }
     } catch (e) {
