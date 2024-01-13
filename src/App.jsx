@@ -17,6 +17,7 @@ import BackgroundChanger from "./components/BackgroundChanger";
 import ContextAPI from "./components/ContextAPI/ContextAPI";
 import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 import TodoApp from "./components/TodoApp/TodoApp";
+import TicTacToe from "./components/TicTacToe/TIcTacToe";
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
       {/* <BackgroundChanger /> */}
       {/* <ContextAPI /> */}
       {/* <PasswordGenerator /> */}
-      <TodoApp />
+      {/* <TodoApp /> */}
+      <TicTacToe />
     </>
   );
 }
