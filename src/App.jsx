@@ -18,6 +18,8 @@ import ContextAPI from "./components/ContextAPI/ContextAPI";
 import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 import TodoApp from "./components/TodoApp/TodoApp";
 import TicTacToe from "./components/TicTacToe/TIcTacToe";
+import FeatureFlags from "./components/FeatureFlags/FeatureFlags";
+import FeatureFlagContextState from "./components/FeatureFlags/contex/contex";
 
 function App() {
   return (
@@ -39,7 +41,10 @@ function App() {
       {/* <ContextAPI /> */}
       {/* <PasswordGenerator /> */}
       {/* <TodoApp /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <FeatureFlagContextState>
+        <FeatureFlags />
+      </FeatureFlagContextState>
     </>
   );
 }
