@@ -24,6 +24,7 @@ import CustomHookFetch from "./components/CustomHookFetch/CustomHookFetch";
 import CloseOnOutsideClick from "./components/CloseOnOutsideClick/CloseOnOutsideClick";
 import CustomHookWindowSize from "./components/CustomHookWindowSize/CustomHookWindowSize";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ScrollToSection from "./components/ScrollToSection/ScrollToSection";
 
 function App() {
   return (
@@ -52,7 +53,8 @@ function App() {
       {/* <CustomHookFetch /> */}
       {/* <CloseOnOutsideClick /> */}
       {/* <CustomHookWindowSize /> */}
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
+      <ScrollToSection />
     </>
   );
 }
