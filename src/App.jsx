@@ -22,6 +22,8 @@ import FeatureFlags from "./components/FeatureFlags/FeatureFlags";
 import FeatureFlagContextState from "./components/FeatureFlags/contex/contex";
 import CustomHookFetch from "./components/CustomHookFetch/CustomHookFetch";
 import CloseOnOutsideClick from "./components/CloseOnOutsideClick/CloseOnOutsideClick";
+import CustomHookWindowSize from "./components/CustomHookWindowSize/CustomHookWindowSize";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
@@ -48,7 +50,9 @@ function App() {
         <FeatureFlags />
       </FeatureFlagContextState> */}
       {/* <CustomHookFetch /> */}
-      <CloseOnOutsideClick />
+      {/* <CloseOnOutsideClick /> */}
+      {/* <CustomHookWindowSize /> */}
+      <ScrollToTop />
     </>
   );
 }

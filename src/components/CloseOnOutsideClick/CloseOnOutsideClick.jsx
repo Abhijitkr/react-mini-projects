@@ -3,7 +3,7 @@ import useOnclickOutsideClose from "./useOnclickOutsideClose";
 
 export default function CloseOnOutsideClick() {
   const [content, setContent] = useState(false);
-  const ref = useRef();
+  const ref = useRef(null);
   useOnclickOutsideClose(ref, () => setContent(false));
 
   return (
