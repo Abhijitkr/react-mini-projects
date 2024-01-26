@@ -20,6 +20,7 @@ import TodoApp from "./components/TodoApp/TodoApp";
 import TicTacToe from "./components/TicTacToe/TIcTacToe";
 import FeatureFlags from "./components/FeatureFlags/FeatureFlags";
 import FeatureFlagContextState from "./components/FeatureFlags/contex/contex";
+import CustomHookFetch from "./CustomHookFetch/CustomHookFetch";
 
 function App() {
   return (
@@ -42,9 +43,10 @@ function App() {
       {/* <PasswordGenerator /> */}
       {/* <TodoApp /> */}
       {/* <TicTacToe /> */}
-      <FeatureFlagContextState>
+      {/* <FeatureFlagContextState>
         <FeatureFlags />
-      </FeatureFlagContextState>
+      </FeatureFlagContextState> */}
+      <CustomHookFetch />
     </>
   );
 }
