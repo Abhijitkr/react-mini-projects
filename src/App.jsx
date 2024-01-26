@@ -20,7 +20,8 @@ import TodoApp from "./components/TodoApp/TodoApp";
 import TicTacToe from "./components/TicTacToe/TIcTacToe";
 import FeatureFlags from "./components/FeatureFlags/FeatureFlags";
 import FeatureFlagContextState from "./components/FeatureFlags/contex/contex";
-import CustomHookFetch from "./CustomHookFetch/CustomHookFetch";
+import CustomHookFetch from "./components/CustomHookFetch/CustomHookFetch";
+import CloseOnOutsideClick from "./components/CloseOnOutsideClick/CloseOnOutsideClick";
 
 function App() {
   return (
@@ -46,7 +47,8 @@ function App() {
       {/* <FeatureFlagContextState>
         <FeatureFlags />
       </FeatureFlagContextState> */}
-      <CustomHookFetch />
+      {/* <CustomHookFetch /> */}
+      <CloseOnOutsideClick />
     </>
   );
 }
