@@ -1,13 +1,137 @@
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  const projects = [
+    {
+      title: "Accordion Project",
+      imageUrl: "/images/accordian.png",
+      link: "/accordian",
+    },
+    {
+      title: "Random Color Generator Project",
+      imageUrl: "/images/random-color-generator.png",
+      link: "/random-color",
+    },
+    {
+      title: "Star Rating Project",
+      imageUrl: "/images/star-rating.png",
+      link: "/star-rating",
+    },
+    {
+      title: "Image Slider Project",
+      imageUrl: "/images/image-slider.png",
+      link: "/image-slider",
+    },
+    {
+      title: "Load More Project",
+      imageUrl: "/images/load-more.png",
+      link: "/load-more",
+    },
+    {
+      title: "Tree View Project",
+      imageUrl: "/images/tree-view.png",
+      link: "/tree-view",
+    },
+    {
+      title: "QR-Code Generator Project",
+      imageUrl: "/images/qr-code.png",
+      link: "/qrcode-generator",
+    },
+    {
+      title: "Theme Changer Project",
+      imageUrl: "/images/theme-changer.png",
+      link: "/theme-changer",
+    },
+    {
+      title: "Scroll Indicator Project",
+      imageUrl: "/images/scroll-indicator.png",
+      link: "/scroll-indicator",
+    },
+    {
+      title: "Tab Parent Project",
+      imageUrl: "/images/tab-parent.png",
+      link: "/tab-parent",
+    },
+    {
+      title: "Modal Parent Project",
+      imageUrl: "/images/modal-parent.png",
+      link: "/modal-parent",
+    },
+    {
+      title: "Github Profile Viewer Project",
+      imageUrl: "/images/github-profile.png",
+      link: "/github-profile",
+    },
+    {
+      title: "Auto Complete Search Project",
+      imageUrl: "/images/auto-search.png",
+      link: "/search-suggestion",
+    },
+    {
+      title: "Background Changer Project",
+      imageUrl: "/images/background-changer.png",
+      link: "/background-changer",
+    },
+    {
+      title: "React Concept of Context API Project",
+      imageUrl: "/images/user-context.png",
+      link: "/user-context",
+    },
+    {
+      title: "Password Generator Project",
+      imageUrl: "/images/password-generator.png",
+      link: "/password-generator",
+    },
+    {
+      title: "Todo App Project",
+      imageUrl: "/images/todo-app.png",
+      link: "/todo-app",
+    },
+    {
+      title: "Tic-Tac-Toe Game Project",
+      imageUrl: "/images/tictactoe-game.png",
+      link: "/tictactoe",
+    },
+    {
+      title: "Feature Flags Project",
+      imageUrl: "/images/feature-flag.png",
+      link: "/feature-flag",
+    },
+    {
+      title: "useFetch Custom Hook Project",
+      imageUrl: "/images/useFetch.png",
+      link: "/use-fetch-hook",
+    },
+    {
+      title: "useCloseOnOutsideClick Custom Hook Project",
+      imageUrl: "/images/useCloseOnOutsideClick.png",
+      link: "/use-close-outside-click",
+    },
+    {
+      title: "useWindowSize Custom Hook Project",
+      imageUrl: "/images/useWindowSize.png",
+      link: "/use-window-size-hook",
+    },
+    {
+      title: "Scroll To Top/Bottom Project",
+      imageUrl: "/images/scroll-top.png",
+      link: "/scroll-top",
+    },
+    {
+      title: "Scroll To Section within Element Project",
+      imageUrl: "/images/scroll-section.png",
+      link: "/scroll-section",
+    },
+  ];
+  const listItemClass =
+    "relative w-80 h-fit bg-gray-500 overflow-hidden group transition duration-300 ease-in-out transform hover:translate-y-[-10px]";
   return (
     <main>
       <div className="text-center m-5">
         <h1 className="text-3xl font-bold">React Mini Projects</h1>
       </div>
       <div>
-        <ul className="flex gap-10 flex-wrap justify-center p-5">
+        {/* <ul className="flex gap-10 flex-wrap justify-center p-5">
           <li className="relative w-80 h-fit bg-gray-500 overflow-hidden group transition duration-300 ease-in-out transform hover:translate-y-[-10px]">
             <Link to="/accordian">
               <img
@@ -352,6 +476,22 @@ export default function Home() {
               </div>
             </Link>
           </li>
+        </ul> */}
+        <ul className="flex gap-10 flex-wrap justify-center p-5">
+          {projects.map((project, index) => (
+            <li key={index} className={listItemClass}>
+              <Link to={project.link}>
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-auto"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 bg-black group-hover:opacity-75 transition-opacity text-center">
+                  <h1 className="text-xl font-bold mb-2">{project.title}</h1>
+                </div>
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </main>
