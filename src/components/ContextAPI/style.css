@@ -1,9 +1,8 @@
 .context-container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 2rem;
   text-align: center;
-  margin: 100px;
 }
 
 .logo {
@@ -12,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -43,7 +44,7 @@
 }
 
 .context-container form input {
-  padding: 10px;
+  padding: 10px 15px;
   font-size: 1.2rem;
   border: none;
   margin-top: 20px;

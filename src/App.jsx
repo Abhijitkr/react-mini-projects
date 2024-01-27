@@ -56,7 +56,7 @@ function App() {
           <Route path="/github-profile" element={<GithubProfile />} />
           <Route path="/search-suggestion" element={<Searching />} />
           <Route path="/background-changer" element={<BackgroundChanger />} />
-          <Route path="/context-api" element={<ContextAPI />} />
+          <Route path="/user-context" element={<ContextAPI />} />
           <Route path="/password-generator" element={<PasswordGenerator />} />
           <Route path="/todo-app" element={<TodoApp />} />
           <Route path="/tictactoe" element={<TicTacToe />} />
@@ -81,32 +81,6 @@ function App() {
           <Route path="/scroll-section" element={<ScrollToSection />} />
         </Routes>
       </BrowserRouter>
-      {/* <Accordion /> */}
-      {/* <RandomColor /> */}
-      {/* <StarRating noOfStars={10} /> */}
-      {/* <ImageSlider url={"https://picsum.photos/v2/list"} limit={5} />
-      <LoadMore />
-      <TreeView menus={menus} />
-      <QRCodeGenerator />
-      <DarkLightMode />
-      <ScrollIndicator url="https://dummyjson.com/products?limit=100" />
-      <TabParent />
-      <ModalParent />
-      <GithubProfile />
-      <Searching /> */}
-      {/* <BackgroundChanger /> */}
-      {/* <ContextAPI /> */}
-      {/* <PasswordGenerator /> */}
-      {/* <TodoApp /> */}
-      {/* <TicTacToe /> */}
-      {/* <FeatureFlagContextState>
-        <FeatureFlags />
-      </FeatureFlagContextState> */}
-      {/* <CustomHookFetch /> */}
-      {/* <CloseOnOutsideClick /> */}
-      {/* <CustomHookWindowSize /> */}
-      {/* <ScrollToTop /> */}
-      {/* <ScrollToSection /> */}
     </div>
   );
 }

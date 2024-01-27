@@ -7,7 +7,7 @@ function ContextAPI() {
   return (
     <UserContextProvider>
       <div className="context-container flex flex-col gap-5">
-        <h1 className="text-2xl ">React Concept of Context API</h1>
+        <h1 className="text-4xl font-bold">React Concept of Context API</h1>
         <Login />
         <Profile />
       </div>
