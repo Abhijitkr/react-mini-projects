@@ -1,125 +1,126 @@
 import { Link } from "react-router-dom";
+import getImageUrl from "./image-util";
 
 export default function Home() {
   const projects = [
     {
       title: "Accordion Project",
-      imageUrl: "/images/accordian.png",
+      image: "accordian.png",
       link: "/accordian",
     },
     {
       title: "Random Color Generator Project",
-      imageUrl: "/images/random-color-generator.png",
+      image: "random-color-generator.png",
       link: "/random-color",
     },
     {
       title: "Star Rating Project",
-      imageUrl: "/images/star-rating.png",
+      image: "star-rating.png",
       link: "/star-rating",
     },
     {
       title: "Image Slider Project",
-      imageUrl: "/images/image-slider.png",
+      image: "image-slider.png",
       link: "/image-slider",
     },
     {
       title: "Load More Project",
-      imageUrl: "/images/load-more.png",
+      image: "load-more.png",
       link: "/load-more",
     },
     {
       title: "Tree View Project",
-      imageUrl: "/images/tree-view.png",
+      image: "tree-view.png",
       link: "/tree-view",
     },
     {
       title: "QR-Code Generator Project",
-      imageUrl: "/images/qr-code.png",
+      image: "qr-code.png",
       link: "/qrcode-generator",
     },
     {
       title: "Theme Changer Project",
-      imageUrl: "/images/theme-changer.png",
+      image: "theme-changer.png",
       link: "/theme-changer",
     },
     {
       title: "Scroll Indicator Project",
-      imageUrl: "/images/scroll-indicator.png",
+      image: "scroll-indicator.png",
       link: "/scroll-indicator",
     },
     {
       title: "Tab Parent Project",
-      imageUrl: "/images/tab-parent.png",
+      image: "tab-parent.png",
       link: "/tab-parent",
     },
     {
       title: "Modal Parent Project",
-      imageUrl: "/images/modal-parent.png",
+      image: "modal-parent.png",
       link: "/modal-parent",
     },
     {
       title: "Github Profile Viewer Project",
-      imageUrl: "/images/github-profile.png",
+      image: "github-profile.png",
       link: "/github-profile",
     },
     {
       title: "Auto Complete Search Project",
-      imageUrl: "/images/auto-search.png",
+      image: "auto-search.png",
       link: "/search-suggestion",
     },
     {
       title: "Background Changer Project",
-      imageUrl: "/images/background-changer.png",
+      image: "background-changer.png",
       link: "/background-changer",
     },
     {
       title: "React Concept of Context API Project",
-      imageUrl: "/images/user-context.png",
+      image: "user-context.png",
       link: "/user-context",
     },
     {
       title: "Password Generator Project",
-      imageUrl: "/images/password-generator.png",
+      image: "password-generator.png",
       link: "/password-generator",
     },
     {
       title: "Todo App Project",
-      imageUrl: "/images/todo-app.png",
+      image: "todo-app.png",
       link: "/todo-app",
     },
     {
       title: "Tic-Tac-Toe Game Project",
-      imageUrl: "/images/tictactoe-game.png",
+      image: "tictactoe-game.png",
       link: "/tictactoe",
     },
     {
       title: "Feature Flags Project",
-      imageUrl: "/images/feature-flag.png",
+      image: "feature-flag.png",
       link: "/feature-flag",
     },
     {
       title: "useFetch Custom Hook Project",
-      imageUrl: "/images/useFetch.png",
+      image: "useFetch.png",
       link: "/use-fetch-hook",
     },
     {
       title: "useCloseOnOutsideClick Custom Hook Project",
-      imageUrl: "/images/useCloseOnOutsideClick.png",
+      image: "useCloseOnOutsideClick.png",
       link: "/use-close-outside-click",
     },
     {
       title: "useWindowSize Custom Hook Project",
-      imageUrl: "/images/useWindowSize.png",
+      image: "useWindowSize.png",
       link: "/use-window-size-hook",
     },
     {
       title: "Scroll To Top/Bottom Project",
-      imageUrl: "/images/scroll-top.png",
+      image: "scroll-top.png",
       link: "/scroll-top",
     },
     {
       title: "Scroll To Section within Element Project",
-      imageUrl: "/images/scroll-section.png",
+      image: "scroll-section.png",
       link: "/scroll-section",
     },
   ];
@@ -482,7 +483,7 @@ export default function Home() {
             <li key={index} className={listItemClass}>
               <Link to={project.link}>
                 <img
-                  src={project.imageUrl}
+                  src={getImageUrl(project.image)}
                   alt={project.title}
                   className="w-full h-auto"
                 />

@@ -2,6 +2,8 @@
 
 Welcome to my React Mini Projects repository! This collection consists of various small React applications that I built while learning React. Each project is designed to showcase different aspects of React and its ecosystem.
 
+## Visit [React Mini Projects](https://react-mini-projs.vercel.app/)
+
 ## Home Page
 
 ![Home Page](./images/home.png)
