@@ -28,8 +28,12 @@ export default function Accordion() {
 
   return (
     <div>
-      <h1 className="text-center m-5 text-3xl font-bold">Accordian Project</h1>
-      <div className="wrapper">
+      <div>
+        <h1 className="text-center m-5 text-3xl font-bold">
+          Accordian Project
+        </h1>
+      </div>
+      <div className="accordian-wrapper">
         <div className="btn-grp">
           <button onClick={onBtnClick} className={btnClass}>
             {!isMulti ? "Enable" : "Disable"} Multi Selection
