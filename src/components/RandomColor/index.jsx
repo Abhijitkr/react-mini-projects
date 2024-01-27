@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function RandomColor() {
   const [colorType, setColorType] = useState("hex");
-  const [color, setColor] = useState("#999999");
+  const [color, setColor] = useState(null);
 
   const getRandom = (length) => Math.floor(Math.random() * length);
   const handleHex = () => {

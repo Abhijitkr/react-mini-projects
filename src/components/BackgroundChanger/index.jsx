@@ -39,7 +39,7 @@ function BackgroundChanger() {
           style={{ backgroundColor: "lime" }}
           onClick={() => setColor("lime")}
         >
-          Limw
+          Lime
         </button>
       </div>
     </div>
