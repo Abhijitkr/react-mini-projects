@@ -23,7 +23,7 @@ export default function ScrollToTop() {
   return (
     <div className="text-center">
       <div>
-        <h1 className="text-3xl font-bold m-5">Scroll To Top</h1>
+        <h1 className="text-3xl font-bold m-5">Scroll To Top/Bottom Project</h1>
         <div className="bg-red-200 p-2">
           <h3 className="text-xl font-semibold">This is top Section</h3>
           <button
@@ -34,7 +34,7 @@ export default function ScrollToTop() {
           </button>
         </div>
         <div className="bg-blue-200 p-2">
-          <h3 className="text-xl font-semibold">This is Main Section</h3>
+          <h3 className="text-xl font-semibold mb-2">This is Main Section</h3>
           {data && data.length
             ? data.map((item) => <p key={item.id}>{item.title}</p>)
             : null}

@@ -59,9 +59,11 @@ export default function ScrollToSection() {
 
   return (
     <div className="text-center">
-      <h1 className="text-3xl font-bold">Scroll To Section</h1>
+      <h1 className="text-3xl font-bold mt-3">
+        Scroll To Section within Element Project
+      </h1>
       <button onClick={scrollToSection} className="py-2 px-5 bg-purple-300 m-5">
-        Scroll to section
+        Scroll to section 3
       </button>
       {data.map((dataItem, index) => (
         <div key={index} style={dataItem.style} ref={index === 2 ? ref : null}>

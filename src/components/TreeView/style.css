@@ -2,6 +2,7 @@
   width: 300px;
   background-color: tomato;
   height: 100vh;
+  padding-top: 10px;
 }
 
 .menu-list {

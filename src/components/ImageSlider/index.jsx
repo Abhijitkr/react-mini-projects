@@ -40,7 +40,10 @@ export default function ImageSlider({ url, limit = 5 }) {
 
   if (error === null)
     return (
-      <div className="container">
+      <div className="wrapper">
+        <div>
+          <h1>Image Slider Project</h1>
+        </div>
         <BsArrowLeftCircleFill
           onClick={handlePrevious}
           className="left-arrow"

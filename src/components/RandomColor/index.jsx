@@ -26,27 +26,32 @@ export default function RandomColor() {
       className="w-screen h-screen text-center text-white"
       style={{ backgroundColor: color }}
     >
-      <button
-        className="m-10 py-2 px-5 border "
-        onClick={() => setColorType("hex")}
-      >
-        HEX
-      </button>
-      <button
-        className="m-10 py-2 px-5 border "
-        onClick={() => setColorType("rgb")}
-      >
-        RGB
-      </button>
-      <button
-        className="m-10 py-2 px-5 border "
-        onClick={colorType === "hex" ? handleHex : handleRgb}
-      >
-        Generate Color
-      </button>
-      <div className="font-bold text-3xl m-40">
-        <p>{colorType}</p>
-        <p>{color}</p>
+      <h1 className="text-3xl font-bold pt-5">
+        Random Color Generator Project
+      </h1>
+      <div>
+        <button
+          className="m-5 py-2 px-5 border bg-red-500"
+          onClick={() => setColorType("hex")}
+        >
+          HEX
+        </button>
+        <button
+          className="m-10 py-2 px-5 border bg-blue-500"
+          onClick={() => setColorType("rgb")}
+        >
+          RGB
+        </button>
+        <button
+          className="m-10 py-2 px-5 border bg-green-500"
+          onClick={colorType === "hex" ? handleHex : handleRgb}
+        >
+          Generate Color
+        </button>
+      </div>
+      <div className="font-bold m-60 flex flex-col gap-5">
+        <p className="text-5xl">{colorType}</p>
+        <p className="text-5xl">{color}</p>
       </div>
     </div>
   );

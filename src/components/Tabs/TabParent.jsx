@@ -17,8 +17,13 @@ export default function TabParent() {
   }
 
   return (
-    <div className="tabs-parent-wrapper">
-      <Tabs tabs={tabs} onChange={handleOnChange} />
+    <div>
+      <h1 className="text-3xl text-center font-bold m-10">
+        Tab Parent Project
+      </h1>
+      <div className="tabs-parent-wrapper">
+        <Tabs tabs={tabs} onChange={handleOnChange} />
+      </div>
     </div>
   );
 }

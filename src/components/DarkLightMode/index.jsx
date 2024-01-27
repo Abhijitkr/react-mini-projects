@@ -9,9 +9,12 @@ export default function DarkLightMode() {
   }
 
   return (
-    <div className="theme-container" data-theme={theme}>
-      <h1>Change Theme</h1>
-      <button onClick={handleTheme}>Change Mode</button>
+    <div className="theme-container text-2xl font-bold" data-theme={theme}>
+      <h1 className="m-10">Theme Changer Project</h1>
+      <h2 className="mt-40">Change Theme</h2>
+      <button onClick={handleTheme} className="font-semibold">
+        Change Mode
+      </button>
     </div>
   );
 }

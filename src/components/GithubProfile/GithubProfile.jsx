@@ -40,12 +40,14 @@ export default function GithubProfile() {
 
   return (
     <div className="github-container">
+      <h1 className="text-3xl font-bold">Github Profile Viewer Project</h1>
       <div className="github-control">
         <input
           type="text"
           placeholder="Enter github username..."
           onChange={(e) => setUsername(e.target.value)}
           value={username}
+          className="shadow"
         />
         <button type="submit" onClick={handleSubmit}>
           Search

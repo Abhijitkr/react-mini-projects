@@ -21,7 +21,7 @@
 }
 
 .label.active {
-  background-color: yellowgreen;
+  background-color: yellowgreen !important;
 }
 
 .tabs-content div {

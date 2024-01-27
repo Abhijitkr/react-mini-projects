@@ -5,7 +5,9 @@ export default function CustomHookWindowSize() {
 
   return (
     <div className="m-10 text-center">
-      <h1 className="m-10 text-3xl font-bold">Custom Hook Window Size</h1>
+      <h1 className="m-10 text-3xl font-bold">
+        Custom Hook Window Size Project
+      </h1>
       <div>
         <p className="text-xl font-semibold m-5">
           Resize window to see the window size

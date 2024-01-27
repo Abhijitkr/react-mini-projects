@@ -1,7 +1,7 @@
 .wrapper {
   width: 100vw;
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .dataItem {
@@ -24,21 +24,22 @@
 }
 
 .btn-grp button {
-  padding: 20px;
+  padding: 10px 20px;
   font-size: 1.3rem;
   font-weight: bold;
   margin: 10px;
+  color: white;
+
+  background-color: rgb(42, 23, 112) !important;
 }
 
 .not-active {
-  color: black;
   border: 1px black solid;
+  background-color: rgb(61, 57, 75) !important;
 }
 
-.active {
-  background-color: rgb(42, 23, 112);
-  color: white;
-}
+/* .active {
+} */
 
 .title {
   cursor: pointer;

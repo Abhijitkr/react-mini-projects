@@ -41,10 +41,13 @@ export default function TodoApp() {
   return (
     <TodoProvider value={{ addTodo, toggleComplete, updateTodo, deleteTodo }}>
       <div className="bg-[#172842] min-h-screen py-8">
+        <h1 className="text-3xl font-bold text-center mb-8 mt-2 text-white">
+          Todo App Project
+        </h1>
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
-          <h1 className="text-2xl font-bold text-center mb-8 mt-2">
+          <h2 className="text-2xl font-bold text-center mb-8 mt-2">
             Manage Your Todos
-          </h1>
+          </h2>
           <div className="mb-4">
             {/* Todo form goes here */}
             <TodoForm />

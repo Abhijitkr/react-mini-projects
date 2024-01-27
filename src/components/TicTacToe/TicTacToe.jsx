@@ -62,6 +62,7 @@ export default function TicTacToe() {
 
   return (
     <div className="tictactoe-container">
+      <h1 className="text-3xl font-bold m-10">Tic-Tac-Toe Game Project</h1>
       <div className="row">
         <Square value={squares[0]} onClick={() => handleClick(0)} />
         <Square value={squares[1]} onClick={() => handleClick(1)} />

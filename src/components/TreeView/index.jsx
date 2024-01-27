@@ -3,8 +3,11 @@ import "./style.css";
 
 export default function TreeView({ menus = [] }) {
   return (
-    <div className="tree-view">
-      {menus && menus.length ? <MenuList list={menus} /> : null}
+    <div>
+      <h1 className="text-3xl text-center font-bold">Tree View Project</h1>
+      <div className="tree-view">
+        {menus && menus.length ? <MenuList list={menus} /> : null}
+      </div>
     </div>
   );
 }

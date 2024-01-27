@@ -30,5 +30,10 @@ export default function StarRating({ noOfStars = 5 }) {
     );
   });
 
-  return <div className="stars">{stars}</div>;
+  return (
+    <div className="stars flex flex-col items-center gap-5">
+      <h1 className="text-3xl font-bold">Star Rating Project</h1>
+      <div className="flex">{stars}</div>
+    </div>
+  );
 }

@@ -1,19 +1,25 @@
-.container,
-.loading,
-.error {
+.wrapper,
+.loading {
   position: relative;
   width: 650px !important;
   height: 500px !important;
   display: flex;
-  margin: 50px auto;
+  margin: 40px auto;
   font-size: 2rem;
-  color: red;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: bold;
 }
 
-.container img {
+.error {
+  font-weight: bold;
+  color: red;
+}
+
+.wrapper img {
   width: 650px;
   height: 500px;
   user-select: none;
@@ -54,8 +60,13 @@
   padding: 15px !important;
   border: none;
   cursor: pointer;
+  margin: 0 10px;
 }
 
 .activeBtn {
   background-color: rgb(87, 71, 71);
+}
+
+.inactiveBtn {
+  background-color: white;
 }

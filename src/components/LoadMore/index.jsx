@@ -40,6 +40,7 @@ export default function LoadMore() {
 
   return (
     <div className="load-more-container">
+      <h1 className="text-center text-3xl font-bold m-5">Load More Project</h1>
       <div className="product-container">
         {!error && products && products.length
           ? products.map((product, index) => (
@@ -51,7 +52,11 @@ export default function LoadMore() {
           : null}
       </div>
       <div className="loadmore">
-        <button disabled={dataExhaust} onClick={() => setCount(count + 1)}>
+        <button
+          disabled={dataExhaust}
+          onClick={() => setCount(count + 1)}
+          className="bg-purple-500"
+        >
           Load More
         </button>
         {dataExhaust ? <p>You reached 100 products!</p> : null}

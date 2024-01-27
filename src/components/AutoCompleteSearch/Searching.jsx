@@ -57,6 +57,7 @@ export default function Searching() {
 
   return (
     <div className="search-container">
+      <h1 className="text-3xl font-bold">Auto Complete Search Project</h1>
       <input
         type="text"
         placeholder="Search User..."

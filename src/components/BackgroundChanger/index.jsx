@@ -7,6 +7,9 @@ function BackgroundChanger() {
 
   return (
     <div className="main" style={{ background: color }}>
+      <h1 className="text-3xl font-bold text-center p-5">
+        Background Changer Project
+      </h1>
       <div className="btn-container">
         <button
           style={{ backgroundColor: "red" }}

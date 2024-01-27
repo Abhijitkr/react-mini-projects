@@ -27,36 +27,39 @@ export default function Accordion() {
   };
 
   return (
-    <div className="wrapper">
-      <div className="btn-grp">
-        <button onClick={onBtnClick} className={btnClass}>
-          {!isMulti ? "Enable" : "Disable"} Multi Selection
-        </button>
-      </div>
-      {data &&
-        data.length > 0 &&
-        data.map((dataItem) => (
-          <div key={dataItem.id} className="dataItem">
-            <div
-              className="title"
-              onClick={() =>
-                isMulti
-                  ? handleMultiple(dataItem.id)
-                  : handleSingle(dataItem.id)
-              }
-            >
-              <div>{dataItem.question}</div>
-              <span>+</span>
+    <div>
+      <h1 className="text-center m-5 text-3xl font-bold">Accordian Project</h1>
+      <div className="wrapper">
+        <div className="btn-grp">
+          <button onClick={onBtnClick} className={btnClass}>
+            {!isMulti ? "Enable" : "Disable"} Multi Selection
+          </button>
+        </div>
+        {data &&
+          data.length > 0 &&
+          data.map((dataItem) => (
+            <div key={dataItem.id} className="dataItem">
+              <div
+                className="title"
+                onClick={() =>
+                  isMulti
+                    ? handleMultiple(dataItem.id)
+                    : handleSingle(dataItem.id)
+                }
+              >
+                <div>{dataItem.question}</div>
+                <span>+</span>
+              </div>
+              {isMulti
+                ? multiSelection.indexOf(dataItem.id) !== -1 && (
+                    <div className="answer">{dataItem.answer}</div>
+                  )
+                : selected === dataItem.id && (
+                    <div className="answer">{dataItem.answer}</div>
+                  )}
             </div>
-            {isMulti
-              ? multiSelection.indexOf(dataItem.id) !== -1 && (
-                  <div className="answer">{dataItem.answer}</div>
-                )
-              : selected === dataItem.id && (
-                  <div className="answer">{dataItem.answer}</div>
-                )}
-          </div>
-        ))}
+          ))}
+      </div>
     </div>
   );
 }

@@ -18,6 +18,9 @@
 
 .qr-code-container button {
   height: 50px;
+  background-color: peru;
+  color: white;
+  font-weight: 500;
 }
 
 .qr-code {

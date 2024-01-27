@@ -59,7 +59,7 @@ export default function ScrollIndicator({ url }) {
   return (
     <div className="scroll-container">
       <div className="scroll-indicator">
-        <h1 className="text-3xl">Scroll Indicator</h1>
+        <h1 className="text-3xl font-bold ">Scroll Indicator Project</h1>
         <div className="scroll-bg">
           <div
             className="scroll-bar"
@@ -67,7 +67,7 @@ export default function ScrollIndicator({ url }) {
           ></div>
         </div>
       </div>
-      <div className="scroll-content">
+      <div className="scroll-content m-3">
         {data && data.length > 0
           ? data.map((dataItem) => <p key={dataItem.id}>{dataItem.title}</p>)
           : null}

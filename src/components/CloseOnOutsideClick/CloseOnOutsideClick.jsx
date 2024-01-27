@@ -8,7 +8,9 @@ export default function CloseOnOutsideClick() {
 
   return (
     <div className="text-center">
-      <h1 className="text-3xl font-bold m-10">Close on outside click</h1>
+      <h1 className="text-3xl font-bold m-10">
+        Close on outside click Custom Hook Project
+      </h1>
       <div className="w-full flex justify-center">
         {content ? (
           <p className="bg-green-500 p-10 text-white w-[400px]" ref={ref}>

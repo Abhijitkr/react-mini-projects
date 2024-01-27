@@ -26,12 +26,14 @@ import CustomHookWindowSize from "./components/CustomHookWindowSize/CustomHookWi
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ScrollToSection from "./components/ScrollToSection/ScrollToSection";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/accordian" element={<Accordion />} />
           <Route path="/random-color" element={<RandomColor />} />
           <Route path="/star-rating" element={<StarRating noOfStars={10} />} />
