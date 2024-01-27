@@ -3,6 +3,7 @@
   --text-primary: black;
   --button-bg: white;
   --button-text: black;
+  --border: 1px solid black;
 }
 
 [data-theme="dark"] {
@@ -10,6 +11,7 @@
   --text-primary: white;
   --button-bg: black;
   --button-text: white;
+  --border: 1px solid white;
 }
 
 .theme-container {
@@ -25,8 +27,9 @@
 }
 
 .theme-container button {
-  width: 100px;
-  padding: 5px;
+  width: 150px;
+  padding: 10px;
   background-color: var(--button-bg);
   color: var(--button-text);
+  border: var(--border);
 }

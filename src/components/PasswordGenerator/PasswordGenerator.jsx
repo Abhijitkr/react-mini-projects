@@ -36,17 +36,17 @@ function PasswordGenerator() {
 
   return (
     <div className="password-generator-container">
-      <main>
-        <header>
-          <h1>Password Generator</h1>
-          <img
+      <main className="main-container">
+        <header className="header">
+          <h1 className="text-3xl font-bold mt-4">Password Generator</h1>
+          {/* <img
             src="https://www.iconshock.com/image/Impressions/Security/password_generator"
             width="40"
             height="40"
             alt=""
-          />
+          /> */}
         </header>
-        <section id="password">
+        <section className="m-5" id="password">
           <input
             type="text"
             placeholder="Password"
@@ -56,8 +56,8 @@ function PasswordGenerator() {
           />
           <button onClick={copyToClipboard}>Copy</button>
         </section>
-        <section id="settings">
-          <div>
+        <section className="m-5" id="settings">
+          <div className="flex gap-2">
             <input
               type="range"
               id="length"
@@ -68,7 +68,7 @@ function PasswordGenerator() {
             />
             <label htmlFor="length">Length: {length}</label>
           </div>
-          <div>
+          <div className="flex items-center gap-2">
             <input
               type="checkbox"
               id="number"
@@ -77,7 +77,7 @@ function PasswordGenerator() {
             />
             <label htmlFor="number">Number</label>
           </div>
-          <div>
+          <div className="flex items-center gap-2">
             <input
               type="checkbox"
               id="character"

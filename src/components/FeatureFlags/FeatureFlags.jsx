@@ -26,7 +26,7 @@ export default function FeatureFlags() {
 
   return (
     <div>
-      <h1>Feature Flags</h1>
+      <h1 className="text-3xl font-bold text-center mt-10">Feature Flags</h1>
       {featureFlagComponents.map((flagItem) =>
         enableFeature[flagItem.key] ? flagItem.component : null
       )}

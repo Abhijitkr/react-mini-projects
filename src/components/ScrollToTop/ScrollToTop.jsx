@@ -16,18 +16,38 @@ export default function ScrollToTop() {
     bottomRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
-  if (error) return <h2>`${error}. Please try again!`</h2>;
-  if (pending) return <h2>Loading...</h2>;
+  if (error)
+    return <h2 className="text-center">`${error}. Please try again!`</h2>;
+  if (pending) return <h2 className="text-center">Loading...</h2>;
 
   return (
-    <div style={{ textAlign: "center" }}>
-      <p>Top Section</p>
-      <button onClick={scrollToBottom}>Scroll to Top</button>
-      {data && data.length
-        ? data.map((item) => <p key={item.id}>{item.title}</p>)
-        : null}
-      <p ref={bottomRef}>Scroll to Bottom</p>
-      <button onClick={scrollToTop}>Bottom Section</button>
+    <div className="text-center">
+      <div>
+        <h1 className="text-3xl font-bold m-5">Scroll To Top</h1>
+        <div className="bg-red-200 p-2">
+          <h3 className="text-xl font-semibold">This is top Section</h3>
+          <button
+            onClick={scrollToBottom}
+            className="bg-purple-300 py-2 px-5 m-2"
+          >
+            Scroll to Bottom
+          </button>
+        </div>
+        <div className="bg-blue-200 p-2">
+          <h3 className="text-xl font-semibold">This is Main Section</h3>
+          {data && data.length
+            ? data.map((item) => <p key={item.id}>{item.title}</p>)
+            : null}
+        </div>
+        <div className="bg-green-200">
+          <h3 className="text-xl font-semibold" ref={bottomRef}>
+            This is Bottom Section
+          </h3>
+          <button onClick={scrollToTop} className="bg-purple-300 py-2 px-5 m-2">
+            Scroll to Top
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

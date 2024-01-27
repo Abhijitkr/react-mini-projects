@@ -59,7 +59,7 @@ export default function ScrollIndicator({ url }) {
   return (
     <div className="scroll-container">
       <div className="scroll-indicator">
-        <h1>Scroll Indicator</h1>
+        <h1 className="text-3xl">Scroll Indicator</h1>
         <div className="scroll-bg">
           <div
             className="scroll-bar"

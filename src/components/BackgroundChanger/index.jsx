@@ -7,7 +7,7 @@ function BackgroundChanger() {
 
   return (
     <div className="main" style={{ background: color }}>
-      <div className="container">
+      <div className="btn-container">
         <button
           style={{ backgroundColor: "red" }}
           onClick={() => setColor("red")}

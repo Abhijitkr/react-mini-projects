@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  margin: 100px;
 }
 
 .logo {
@@ -39,4 +40,25 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.context-container form input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.context-container form button {
+  padding: 10px;
+  margin: 10px;
+  background: blueviolet;
+  color: white;
+}
+
+.context-container span {
+  font-size: 1.9rem;
 }

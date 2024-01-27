@@ -19,3 +19,7 @@
 .qr-code-container button {
   height: 50px;
 }
+
+.qr-code {
+  margin: auto;
+}

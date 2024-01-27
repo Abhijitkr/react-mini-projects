@@ -7,13 +7,16 @@ export default function CloseOnOutsideClick() {
   useOnclickOutsideClose(ref, () => setContent(false));
 
   return (
-    <div>
-      <h1>Close on outside click</h1>
-      <div>
+    <div className="text-center">
+      <h1 className="text-3xl font-bold m-10">Close on outside click</h1>
+      <div className="w-full flex justify-center">
         {content ? (
-          <p ref={ref}>Some content. Click outside to close the content!</p>
+          <p className="bg-green-500 p-10 text-white w-[400px]" ref={ref}>
+            Some content. Click outside to close the content!
+          </p>
         ) : (
           <button
+            className="py-2 px-5"
             style={{ backgroundColor: "purple", color: "white" }}
             onClick={() => setContent(true)}
           >
