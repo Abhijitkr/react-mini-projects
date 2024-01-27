@@ -17,7 +17,7 @@ import BackgroundChanger from "./components/BackgroundChanger";
 import ContextAPI from "./components/ContextAPI/ContextAPI";
 import PasswordGenerator from "./components/PasswordGenerator/PasswordGenerator";
 import TodoApp from "./components/TodoApp/TodoApp";
-import TicTacToe from "./components/TicTacToe/TIcTacToe";
+import TicTacToe from "./components/TicTacToe/TicTacToe";
 import FeatureFlags from "./components/FeatureFlags/FeatureFlags";
 import FeatureFlagContextState from "./components/FeatureFlags/contex/contex";
 import CustomHookFetch from "./components/CustomHookFetch/CustomHookFetch";
