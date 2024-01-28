@@ -57,6 +57,7 @@ Welcome to my React Mini Projects repository! This collection consists of variou
 23. **Todo App**: Basic to-do list application.
 
 24. **Tree View Sidebar**: Implements a tree-view sidebar navigation component.
+25. **Weather App**: Simple and intuitive weather app providing real-time weather information based on user location or search queries, built with Vite.js and utilizing OpenWeatherMap API.
 
 ## Usage
 

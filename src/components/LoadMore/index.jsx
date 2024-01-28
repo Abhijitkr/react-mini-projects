@@ -40,7 +40,9 @@ export default function LoadMore() {
 
   return (
     <div className="load-more-container">
-      <h1 className="text-center text-3xl font-bold m-5">Load More Project</h1>
+      <h1 className="text-center text-3xl font-bold m-5 text-white">
+        Load More Project
+      </h1>
       <div className="product-container">
         {!error && products && products.length
           ? products.map((product, index) => (
@@ -55,7 +57,7 @@ export default function LoadMore() {
         <button
           disabled={dataExhaust}
           onClick={() => setCount(count + 1)}
-          className="bg-purple-500"
+          className="bg-purple-500 disabled:opacity-50"
         >
           Load More
         </button>

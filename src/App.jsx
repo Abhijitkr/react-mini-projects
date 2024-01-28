@@ -27,6 +27,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import ScrollToSection from "./components/ScrollToSection/ScrollToSection";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
+import WeatherApp from "./components/WeatherApp";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
           />
           <Route path="/scroll-top" element={<ScrollToTop />} />
           <Route path="/scroll-section" element={<ScrollToSection />} />
+          <Route path="/weather-app" element={<WeatherApp />} />
         </Routes>
       </BrowserRouter>
     </div>

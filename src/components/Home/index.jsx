@@ -123,13 +123,18 @@ export default function Home() {
       image: "scroll-section.png",
       link: "/scroll-section",
     },
+    {
+      title: "Weather App Project",
+      image: "weather-app.png",
+      link: "/weather-app",
+    },
   ];
   const listItemClass =
     "relative w-80 h-fit bg-gray-500 overflow-hidden group transition duration-300 ease-in-out transform hover:translate-y-[-10px]";
   return (
     <main>
       <div className="text-center m-5">
-        <h1 className="text-3xl font-bold">React Mini Projects</h1>
+        <h1 className="text-3xl font-bold text-white">React Mini Projects</h1>
       </div>
       <div>
         {/* <ul className="flex gap-10 flex-wrap justify-center p-5">
